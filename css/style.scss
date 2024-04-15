@@ -12,6 +12,12 @@
     --border:               #434046;
 }
 
+// base
 body {
     background-color: var(--background-primary);
+}
+
+// header
+.l-header {
+    display: flex;
 }
