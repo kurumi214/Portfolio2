@@ -11,4 +11,8 @@
 
 body {
   background-color: var(--background-primary);
+}
+
+.l-header {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
