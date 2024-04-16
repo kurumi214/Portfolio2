@@ -11,8 +11,254 @@
 
 body {
   background-color: var(--background-primary);
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.c-logo {
+  width: 9rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.c-simulation-btn {
+  z-index: 1000;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: #2A262C;
+  position: fixed;
+  box-shadow: 1rem 1rem 3rem rgba(19, 22, 22, 0.4);
+  border-radius: 100vh;
+  padding: 15px 25px;
+  position: fixed;
+  bottom: 5rem;
+  right: 3rem;
+}
+.c-simulation-btn img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 1.5rem;
+}
+.c-simulation-btn-txt {
+  color: white;
+  margin: 0 10px;
+}
+
+.c-link-dl-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #448EF6;
+  background-color: white;
+  font-size: 14px;
+  border-radius: 100vh;
+  padding: 7px 20px;
+}
+.c-link-dl-btn img {
+  fill: #448EF6;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 3rem;
+}
+
+.c-title {
+  text-align: center;
+  font-weight: 900;
+  font-size: 40px;
+}
+.c-title span {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
 }
 
 .l-header {
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  z-index: 1000;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: white;
+  border-bottom: solid 1px #d2d1d2;
+}
+.l-header-nav {
+  display: flex;
+}
+.l-header-nav-item {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.l-header-nav-item-arrow {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 1.5rem;
+}
+.l-header-nav-item-arrow:hover {
+  fill: #448EF6;
+  transition: all 0.3s;
+}
+.l-header-nav-item:hover {
+  color: #448EF6;
+  transition: all 0.3s;
+}
+.l-header-nav-sub {
+  display: none;
+}
+.l-header-more {
+  display: flex;
+  align-items: center;
+  margin-right: 40px;
+}
+.l-header-more-login:hover {
+  color: #448EF6;
+  transition: all 0.3s;
+}
+.l-header-more-dl {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #448EF6;
+  border-radius: 100vh;
+  color: white;
+  padding: 5px 10px;
+  margin-left: 20px;
+}
+.l-header-more-dl:hover {
+  cursor: pointer;
+  background-color: #73aaf7;
+  transition: all 0.3s;
+}
+
+.l-hero {
+  overflow: hidden;
+  position: relative;
+  height: 669px;
+  margin: 87px 15px 0 15px;
+  background-color: #448EF6;
+  border-radius: 10px;
+}
+.l-hero-copy {
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
+}
+.l-hero-lead {
+  font-weight: 900;
+  font-size: 40px;
+}
+.l-hero-lead span {
+  font-size: 50px;
+}
+.l-hero-phone {
+  z-index: 10;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 30rem;
+  position: absolute;
+  top: 7rem;
+  right: 3rem;
+}
+.l-hero-loop {
+  overflow: hidden;
+  position: absolute;
+  top: 26rem;
+  display: flex;
+  animation: infinity-scroll-left 25s infinite linear 0.5s both;
+}
+.l-hero-loop-img {
+  margin: 0 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 14.2857142857vw;
+}
+.l-hero-loop-img img {
+  width: 100%;
+}
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.l-client {
+  padding: 20px 60px;
+}
+.l-client-list {
+  height: 200px;
+}
+.l-client-list-logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 110px;
+  margin-right: 20px;
+}
+
+.l-about {
+  position: relative;
+  height: 669px;
+}
+.l-about-txt {
+  margin-top: 20px;
+  text-align: center;
+}
+.l-about img {
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 15px;
+}
+.l-about-img1 {
+  position: absolute;
+  top: 5rem;
+  left: 0rem;
+}
+.l-about-img2 {
+  position: absolute;
+  top: 13rem;
+  left: 10rem;
+}
+.l-about-img3 {
+  position: absolute;
+  bottom: 0rem;
+  left: 4rem;
+}
+.l-about-img4 {
+  position: absolute;
+  top: 3rem;
+  right: 4rem;
+}
+.l-about-img5 {
+  position: absolute;
+  bottom: 2rem;
+  right: 0rem;
+}
+.l-about-video {
+  text-align: center;
+  margin-top: 20px;
+  position: absolute;
+  top: 22rem;
+  left: 30rem;
+}
+.l-about-video-txt {
+  color: #448EF6;
+  font-size: 14px;
+}
+.l-about-video-txt img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 10px;
 }/*# sourceMappingURL=style.css.map */

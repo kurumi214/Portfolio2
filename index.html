@@ -20,30 +20,46 @@
 
         <!-- header -->
         <header class="l-header">
-            <img src="./images/logo.png" alt="会社ロゴ">
             <ul class="l-header-nav">
-                <li class="l-header-nav">
+                <img class="c-logo" src="./images/logo.svg" alt="会社ロゴ">
+                <li class="l-header-nav-item">
                     サービス
-                    <img src="./images/icon/chevron-down.svg" alt="矢印">
+                    <img class="l-header-nav-item-arrow" src="./images/icon/chevron-down.svg" alt="矢印">
+                    <ul class="l-header-nav-sub">
+                        <li class="l-header-nav-sub-item">特徴・サービス</li>
+                        <li class="l-header-nav-sub-item">機能</li>
+                    </ul>
                 </li>
-                <li class="l-header-nav">
+                <li class="l-header-nav-item">
                     ソリューション
-                    <img src="./images/icon/chevron-down.svg" alt="矢印">
+                    <img class="l-header-nav-item-arrow" src="./images/icon/chevron-down.svg" alt="矢印">
+                    <ul class="l-header-nav-sub">
+                        <li class="l-header-nav-sub-item">販売</li>
+                        <li class="l-header-nav-sub-item">デイサービス</li>
+                        <li class="l-header-nav-sub-item">土木・建設</li>
+                        <li class="l-header-nav-sub-item">宿泊施設</li>
+                    </ul>
                 </li>
-                <li class="l-header-nav">
+                <li class="l-header-nav-item">
                     事例
                 </li>
-                <li class="l-header-nav">
+                <li class="l-header-nav-item">
                     プライス
-                    <img src="./images/icon/chevron-down.svg" alt="矢印">
+                    <img class="l-header-nav-item-arrow" src="./images/icon/chevron-down.svg" alt="矢印">
+                    <ul class="l-header-nav-sub">
+                        <li class="l-header-nav-sub-item">販売</li>
+                        <li class="l-header-nav-sub-item">デイサービス</li>
+                        <li class="l-header-nav-sub-item">土木・建設</li>
+                        <li class="l-header-nav-sub-item">宿泊施設</li>
+                    </ul>
                 </li>
-                <li class="l-header-nav">
+                <li class="l-header-nav-item">
                     TIPS
                 </li>
-                <li class="l-header-nav">
+                <li class="l-header-nav-item">
                     よくある質問
                 </li>
-                <li class="l-header-nav">
+                <li class="l-header-nav-item">
                     お問い合わせ
                 </li>
             </ul>
@@ -56,7 +72,7 @@
         <!-- simulation-btn -->
         <div class="c-simulation-btn">
             <img src="./images/icon/file-text (1).svg" alt="資料">
-            料金シミュレーション
+            <div class="c-simulation-btn-txt">料金シミュレーションを始める</div>
             <img src="./images/icon/arrow-right (1).svg" alt="矢印">
         </div>
 
@@ -66,55 +82,70 @@
             <!-- hero -->
             <div class="l-hero">
                 <div class="l-hero-inner">
-                    <div class="c-logo">
-                        <img src="images/logo.png" alt="ロゴ">
+                    <div class="l-hero-copy">
+                        <div class="c-logo">
+                            <img src="images/logo.png" alt="ロゴ">
+                        </div>
+                        <div class="l-hero-lead">
+                            コミュニケーションのムダを<br>
+                            <span>0</span>にして、現場を効率化させよう。
+                        </div>
+                        <p class="l-hero-txt">
+                            BONX WORK（ボンクス・ワーク）は、チームのパフォーマンスを最大化する、<br>
+                            現場コミュニケーションのワンストップソリューションです。
+                        </p>
+                        <div class="c-link-dl-btn">
+                            資料のダウンロード
+                            <img src="./images/icon/arrow-right (1).svg" alt="矢印">
+                        </div>
                     </div>
-                    <div class="l-hero-copy"></div>
-                    <p class="l-hero-txt"></p>
-                    <div class="c-link-dl-btn">
-                        資料のダウンロード
-                    </div>
-                    <img src="./images/hero-phone.png" alt="スマートフォン">
+                    <img class="l-hero-phone" src="./images/hero-phone.svg" alt="スマートフォン">
                 </div>
-                <div class="l-hero-loop">
-                    <img src="./images/hero-loop1.png" alt="ミーティング">
-                    <img src="./images/hero-loop2.png" alt="工事現場">
-                    <img src="./images/hero-loop3.png" alt="マップ">
-                    <img src="./images/hero-loop4.png" alt="商談">
-                    <img src="./images/hero-loop5.png" alt="デバイス">
-                    <img src="./images/hero-loop6.png" alt="スマートフォン">
-                    <img src="./images/hero-loop7.png" alt="オフィス">
+                <div class="l-hero-loop infinity-scroll-left">
+                    <img class="l-hero-loop-img" src="./images/hero-loop1.svg" alt="ミーティング">
+                    <img class="l-hero-loop-img" src="./images/hero-loop2.svg" alt="工事現場">
+                    <img class="l-hero-loop-img" src="./images/hero-loop3.svg" alt="マップ">
+                    <img class="l-hero-loop-img" src="./images/hero-loop4.svg" alt="商談">
+                    <img class="l-hero-loop-img" src="./images/hero-loop5.svg" alt="デバイス">
+                    <img class="l-hero-loop-img" src="./images/hero-loop6.svg" alt="スマートフォン">
+                    <img class="l-hero-loop-img" src="./images/hero-loop7.svg" alt="オフィス">
                 </div>
             </div>
 
             <!-- client -->
-            <div class="l-client-list">
-                <div class="l-client-logo">
-                    <img src="./images/company1.jpg" alt="company1">
-                    <img src="./images/company2.jpg" alt="company2">
-                    <img src="./images/company3.jpg" alt="company3">
-                    <img src="./images/company4.jpg" alt="company5">
-                    <img src="./images/company5.jpg" alt="company5">
-                    <img src="./images/company6.jpg" alt="company6">
-                    <img src="./images/company7.jpg" alt="company7">
-                    <img src="./images/company8.jpg" alt="company8">
+            <div class="l-client">
+                <div class="l-client-list">
+                    <img class="l-client-list-logo" src="./images/company1.jpg" alt="company1">
+                    <img class="l-client-list-logo" src="./images/company2.jpg" alt="company2">
+                    <img class="l-client-list-logo" src="./images/company3.jpg" alt="company3">
+                    <img class="l-client-list-logo" src="./images/company4.jpg" alt="company5">
+                    <img class="l-client-list-logo" src="./images/company5.jpg" alt="company5">
+                    <img class="l-client-list-logo" src="./images/company6.jpg" alt="company6">
+                    <img class="l-client-list-logo" src="./images/company7.jpg" alt="company7">
+                    <img class="l-client-list-logo" src="./images/company8.jpg" alt="company8">
                 </div>
             </div>
 
             <!-- about -->
             <div class="l-about">
-                <div class="l-about-title">
+                <div class="c-title">
                     <span>SoundSync Hubとは</span>
                     ムダを省いて効率化。<br>SoundSync Hubなら<br>全て揃います
                 </div>
                 <div class="l-about-txt">
                     デスクレスワーカーの両手を解放し、<br>無駄を解放し、働き方を解放する。<br>現場コミュニケーションの制約をゼロにして、<br>働き方を進化させましょう。
                 </div>
-                <img src="./images/about1.jpg" class="about1" alt="男性">
-                <img src="./images/about2.jpg" class="about2" alt="スマートフォン">
-                <img src="./images/about3.jpg" class="about3" alt="記者">
-                <img src="./images/about4.jpg" class="about4" alt="ヘッドホン">
-                <img src="./images/about5.jpg" class="about5" alt="オフィスワーカー">
+                <img src="./images/about1.jpg" class="l-about-img1" alt="男性">
+                <img src="./images/about2.jpg" class="l-about-img2" alt="スマートフォン">
+                <img src="./images/about3.jpg" class="l-about-img3" alt="記者">
+                <img src="./images/about4.jpg" class="l-about-img4" alt="ヘッドホン">
+                <img src="./images/about5.jpg" class="l-about-img5" alt="オフィスワーカー">
+                <div class="l-about-video">
+                    <img src="./images/about-video.svg" alt="ビデオ">
+                    <div class="l-about-video-txt">
+                        「2分でわかるSoundSync Hub」を再生する<img src="./images/icon/play-circle.svg" alt="再生">
+                    </div>
+                </div>
             </div>
 
             <!-- benefit -->
@@ -546,7 +577,7 @@
                     料金プランを詳しく見る
                     <img src="./images/icon/arrow-right-circle (3).svg" alt="矢印">
                 </div>
-                <div class="c-simulation-btn">
+                <div id="c-simulation-btn">
                     <img src="./images/icon/file-text (1).svg" alt="資料">
                     料金シミュレーション
                     <img src="./images/icon/arrow-right (1).svg" alt="矢印">
@@ -787,7 +818,7 @@
                 <div class="c-link-dl-btn-big">
                     資料のダウンロード
                 </div>
-                <div class="c-simulation-btn">
+                <div id="c-simulation-btn">
                     <img src="./images/icon/file-text (1).svg" alt="資料">
                     料金シミュレーション
                     <img src="./images/icon/arrow-right (1).svg" alt="矢印">
