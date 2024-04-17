@@ -254,7 +254,6 @@
      -webkit-margin-after: 1em;
      -webkit-margin-start: 0;
      -webkit-margin-end: 0;
-     -webkit-padding-start: 40px
  }
  ol {
      display: block;
@@ -263,7 +262,6 @@
      -webkit-margin-after: 1em;
      -webkit-margin-start: 0;
      -webkit-margin-end: 0;
-     -webkit-padding-start: 40px
  }
  li {
      display: list-item;
@@ -303,7 +301,6 @@
  }
  legend {
      display: block;
-     -webkit-padding-start: 2px;
      -webkit-padding-end: 2px;
      border: none
  }
@@ -312,7 +309,6 @@
      -webkit-margin-start: 2px;
      -webkit-margin-end: 2px;
      -webkit-padding-before: 0.35em;
-     -webkit-padding-start: 0.75em;
      -webkit-padding-end: 0.75em;
      -webkit-padding-after: 0.625em;
      border: 2px groove ThreeDFace;

@@ -20,14 +20,16 @@ body {
 li {
     list-style-type: none;
 }
+.l-main-wrap {
+    padding: 12rem 15.6rem;
+    background-color: #2A262C;
+    color: white;
+}
 
 // component
 .c-logo {
     width: 9rem;
     object-fit: contain;
-    &-hero {
-
-    }
 }
 .c-simulation-btn {
     z-index: 1000;
@@ -77,6 +79,39 @@ li {
         display: block;
         font-size: 14px;
     }
+}
+.c-item-link {
+    display: flex;
+    &-txt {
+        margin-right: 10px;
+        font-size: 28px;
+        font-weight: 900;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+.c-btn-plus {
+    object-fit: contain;
+    width: 30px;
+}
+.c-more-link {
+    display: flex;
+    text-align: center;
+    color: #448EF6;
+    font-weight: 700;
+    img {
+        width: 20px;
+    }
+    &:hover {
+        cursor: pointer;
+    }
+}
+.c-notice-tax {
+    margin: 3rem 1rem 0 0;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: end;
 }
 
 // header
@@ -253,13 +288,106 @@ li {
         position: absolute;
         top: 22rem;
         left: 30rem;
-        &-txt {
+        &-txt 
+        a {
+            display: flex;
+            align-items: center;
             color: #448EF6;
             font-size: 14px;
             img {
                 object-fit: contain;
-                width: 10px;
+                width: 17px;
             }
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+// benefit
+
+// feature
+
+// function
+.l-function {
+    &-container {
+        border-top: solid 0.5px #787878;
+    }
+    &-item {
+        display: flex;
+        margin-top: 60px;
+        &-inner {
+            margin: auto;
+        }
+        &-img {
+            margin-right: 46px;
+            object-fit: cover;
+            height: 389px;
+            width: 477px;
+            border-radius: 15px;
+        }
+    }
+    &-bottom {
+        margin-top: 77px;
+        display: flex;
+        &-item {
+            padding: 30px;
+            border-top: solid 0.5px #787878;
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+        &-icon {
+            object-fit: contain;
+            width: 50px;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 24px;
+            margin: 15px 0;
+        }
+    }
+}
+
+// hardware
+.l-hardware {
+    padding: 12rem 15.6rem;
+    &-product {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        &-item {
+            padding: 3rem;
+            width: 20vw;
+            border: solid 0.5px #787878;
+            border-radius: 11px;
+            &:first-child {
+                margin-right: 20px;
+            }
+        }
+        &-img {
+            margin: 0 20%;
+            object-fit: contain;
+            width: 150px;
+            height: 150px;
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 22px;
+            p {
+                margin: 20px 0 10px 0;
+                color: #434046;
+                font-weight: normal;
+                font-size: 14px;
+            }
+        }
+        &-point {
+            padding: 0;
+        }
+        &-txt {
+            font-weight: 600;
+            margin-bottom: 20px;
         }
     }
 }
