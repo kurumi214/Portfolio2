@@ -18,6 +18,10 @@ li {
   list-style-type: none;
 }
 
+img {
+  max-width: 100vw;
+}
+
 .l-main-wrap {
   padding: 12rem 15.6rem;
   background-color: #2A262C;
@@ -362,7 +366,7 @@ li {
   justify-content: center;
 }
 .l-hardware-product-item {
-  padding: 3rem;
+  padding: 4rem;
   width: 20vw;
   border: solid 0.5px #787878;
   border-radius: 11px;
@@ -393,4 +397,120 @@ li {
 .l-hardware-product-txt {
   font-weight: 600;
   margin-bottom: 20px;
+}
+.l-hardware-alert {
+  margin-top: 56px;
+  padding: 2rem 3rem;
+  display: flex;
+  align-items: center;
+  border: solid 0.5px #bebebe;
+  background-color: #f2f2f2;
+  border-radius: 11px;
+}
+.l-hardware-alert-txt {
+  font-weight: 600;
+  font-size: 18px;
+}
+.l-hardware-alert-txt span {
+  font-weight: 100;
+  font-size: 15px;
+}
+.l-hardware-alert-img {
+  padding: 0 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 150px;
+  height: 150px;
+}
+
+.l-client-main {
+  padding: 7rem 5rem;
+  background-color: #f2f2f2;
+}
+.l-client-main-logo-wrap {
+  margin-top: 3.5rem;
+  padding: 3rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 11px;
+}
+.l-client-main-logo-wrap img {
+  margin: 0 29px 29px 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 111px;
+}
+
+.l-solution {
+  padding: 7rem 5rem;
+  background-color: #2A262C;
+}
+.l-solution-title {
+  color: white;
+  font-weight: 900;
+  font-size: 40px;
+}
+.l-solution-title span {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 14px;
+}
+.l-solution-wrap {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.l-solution-item-link {
+  margin: 2rem 0 0 2rem;
+  align-items: center;
+  display: flex;
+  color: white;
+  font-weight: 600;
+  font-size: 29px;
+  text-shadow: 1px 1px 5px #8e8e8e;
+}
+.l-solution-item-link img {
+  width: 28px;
+  margin-left: 10px;
+}
+.l-solution-item1, .l-solution-item2, .l-solution-item3, .l-solution-item4 {
+  width: 20vw;
+  height: 500px;
+  position: relative;
+}
+.l-solution-item1::after, .l-solution-item2::after, .l-solution-item3::after, .l-solution-item4::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: black;
+  opacity: 0.5;
+  transition: all 0.3s ease-in-out;
+}
+.l-solution-item1:hover::after, .l-solution-item2:hover::after, .l-solution-item3:hover::after, .l-solution-item4:hover::after {
+  opacity: 0.1;
+}
+.l-solution-item1 {
+  background-image: url(../images/example1.jpg);
+  background-size: cover;
+  border-radius: 15px;
+}
+.l-solution-item2 {
+  background-image: url(../images/example2.jpg);
+  background-size: cover;
+  border-radius: 15px;
+}
+.l-solution-item3 {
+  background-image: url(../images/example3.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  background-position: center;
+}
+.l-solution-item4 {
+  background-image: url(../images/example4.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  background-position: bottom;
 }/*# sourceMappingURL=style.css.map */
