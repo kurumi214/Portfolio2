@@ -59,6 +59,27 @@ img {
   margin: 0 10px;
 }
 
+#c-simulation-btn {
+  margin: 0 auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: #2A262C;
+  box-shadow: 1rem 1rem 3rem rgba(19, 22, 22, 0.4);
+  border-radius: 100vh;
+  padding: 15px 25px;
+}
+#c-simulation-btn img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 1.5rem;
+}
+#c-simulation-btn-txt {
+  color: white;
+  margin: 0 10px;
+}
+
 .c-link-dl-btn {
   display: flex;
   align-items: center;
@@ -513,4 +534,86 @@ img {
   background-size: cover;
   border-radius: 15px;
   background-position: bottom;
+}
+
+.l-plan {
+  padding: 7rem 6rem;
+  background-color: #f2f2f2;
+}
+.l-plan-item {
+  width: 100%;
+  border: solid 0.5px #c0c0c0;
+  background-color: white;
+  border-radius: 11px;
+}
+.l-plan-item-wrap {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.l-plan-item:first-child {
+  margin-right: 20px;
+}
+.l-plan-item-top {
+  padding: 35px 0;
+  align-items: center;
+  display: flex;
+  border-bottom: solid 0.5px #c0c0c0;
+}
+.l-plan-item-title {
+  font-weight: 700;
+  font-size: 28px;
+}
+.l-plan-item-img {
+  margin: 0 40px 0 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 84px;
+  max-width: 89px;
+}
+.l-plan-item-price {
+  padding: 35px 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+.l-plan-item-price-2 {
+  margin-right: 20px;
+}
+.l-plan-item-price span {
+  font-size: 14px;
+  padding: 0 7px;
+  display: block;
+  background-color: #f2f2f2;
+  border-radius: 11px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.l-plan-item-price p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  color: #838282;
+}
+.l-plan-item-price-wrap {
+  display: flex;
+  justify-content: center;
+}
+.l-plan-item-plus {
+  font-size: 47px;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+.l-plan-alert {
+  color: #838282;
+  font-size: 14px;
+}
+.l-plan-alert-wrap {
+  margin-top: 15px;
+}
+.l-plan-link {
+  margin: 36px 0;
+  display: flex;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

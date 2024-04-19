@@ -59,6 +59,25 @@ img {
         margin: 0 10px;
     }
 }
+#c-simulation-btn {
+    margin: 0 auto;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background-color: #2A262C;
+    box-shadow: 1rem 1rem 3rem rgba(19,22,22,.4);
+    border-radius: 100vh;
+    padding: 15px 25px;
+    img {
+        object-fit: contain;
+        width: 1.5rem;
+    }
+    &-txt {
+        color: white;
+        margin: 0 10px;
+    }
+}
+
 .c-link-dl-btn {
     display: flex;
     align-items: center;
@@ -516,5 +535,86 @@ img {
         background-size: cover;
         border-radius: 15px;
         background-position: bottom;
+    }
+}
+
+// l-plan
+.l-plan {
+    padding: 7rem 6rem;
+    background-color: #f2f2f2;
+    &-item {
+        &-wrap {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        width: 100%;
+        border: solid 0.5px #c0c0c0;
+        background-color: white;
+        border-radius: 11px;
+        &:first-child {
+            margin-right: 20px;
+        }
+        &-top {
+            padding: 35px 0;
+            align-items: center;
+            display: flex;
+            border-bottom: solid 0.5px #c0c0c0;
+        }
+        &-title {
+            font-weight: 700;
+            font-size: 28px;
+        }
+        &-img {
+            margin: 0 40px 0 20px;
+            object-fit: contain;
+            height: 84px;
+            max-width: 89px;
+        }
+        &-price {
+            padding: 35px 0;
+            font-size: 30px;
+            font-weight: 700;
+            &-2 {
+                margin-right: 20px;
+            }
+            span {
+                font-size: 14px;
+                padding: 0 7px;
+                display: block;
+                background-color: #f2f2f2;
+                border-radius: 11px;
+                width: fit-content;
+            }
+            p {
+                margin: 0;
+                font-size: 14px;
+                font-weight: normal;
+                color: #838282;
+            }
+            &-wrap {
+                display: flex;
+                justify-content: center;
+            }
+        }
+        &-plus {
+            font-size: 47px;
+            display: flex;
+            align-items: center;
+            margin-right: 20px;
+        }
+    }
+    &-alert {
+        &-wrap {
+            margin-top: 15px;
+        }
+        color: #838282;
+        font-size: 14px;
+    }
+    &-link {
+        margin: 36px 0;
+        display: flex;
+        justify-content: center;
     }
 }
