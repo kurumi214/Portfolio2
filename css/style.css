@@ -12,6 +12,7 @@
 body {
   background-color: var(--background-primary);
   margin: 0;
+  font-family: "Barlow Condensed";
 }
 
 li {
@@ -814,14 +815,15 @@ a {
   padding: 0;
 }
 .l-footer-bottom {
+  padding: 1.5rem 0;
   margin: 0 7rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   border-top: solid 0.5px #9D9B9E;
   color: #9D9B9E;
 }
 .l-footer-bottom-wrap {
-  margin-top: 2rem;
   display: flex;
 }
 
