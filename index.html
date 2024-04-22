@@ -13,6 +13,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- js -->
+    <script src="script.js" defer></script>
 </head>
 <body>
         <!-- header -->
@@ -64,7 +67,37 @@
                 <div class="l-header-more-login">ログイン</div>
                 <div class="l-header-more-dl">資料ダウンロード</div>
             </div>
+            <div class="l-header-hamburger">
+                <img src="./images/menu.svg" alt="メニュー">
+            </div>
         </header>
+
+        <!-- hamburger meenu -->
+        <div class="l-hamburger-menu">
+            <a href="#" class="l-hamburger-menu-item">トップ</a>
+            <a href="#" class="l-hamburger-menu-item">サービス</a>
+            <a href="#" class="l-hamburger-menu-item sub-item">特徴</a>
+            <a href="#" class="l-hamburger-menu-item sub-item">ハードウェア</a>
+            <a href="#" class="l-hamburger-menu-item">ソリューション</a>
+            <a href="#" class="l-hamburger-menu-item sub-item">デイサービス</a>
+            <a href="#" class="l-hamburger-menu-item sub-item">建設・土木</a>
+            <a href="#" class="l-hamburger-menu-item sub-item">ホテル・旅館</a>
+            <a href="#" class="l-hamburger-menu-item sub-item">販売</a>
+            <a href="#" class="l-hamburger-menu-item">事例</a>
+            <a href="#" class="l-hamburger-menu-item">料金</a>
+            <a href="#" class="l-hamburger-menu-item">料金プラン</a>
+            <a href="#" class="l-hamburger-menu-item">ソフトウェア料金</a>
+            <a href="#" class="l-hamburger-menu-item">ハードウェア料金</a>
+            <a href="#" class="l-hamburger-menu-item">プランシミュレーション</a>
+            <a href="#" class="l-hamburger-menu-item">TIPS</a>
+            <a href="#" class="l-hamburger-menu-item">よくある質問</a>
+            <a href="#" class="l-hamburger-menu-item">問い合わせ</a>
+            <a href="#" class="l-hamburger-menu-item">ニューリリース</a>
+            <a href="#" class="l-hamburger-menu-item">資料ダウンロード</a>
+            <a href="#" class="l-hamburger-menu-item">ご利用申し込み</a>
+            <a href="#" class="l-hamburger-menu-item link">ログイン</a>
+        </div>
+         
 
         <!-- simulation-btn -->
         <a href="#" class="c-simulation-btn">
@@ -149,7 +182,7 @@
                 <img src="./images/about5.jpg" class="l-about-img5" alt="オフィスワーカー">
                 <div class="l-about-video">
                     <img src="./images/about-video.svg" alt="ビデオ">
-                    <div class="l-about-video-txt">
+                    <div class="l-about-video-txt" onclick="popupToggle()">
                         <a href="#">「2分でわかるSoundSync Hub」を再生する<img src="./images/icon/play-circle.svg" alt="再生"></a>
                     </div>
                 </div>
@@ -270,10 +303,15 @@
                         <span>特徴・機能</span>
                         現場のための機能が詰まっています。
                     </div>
-
-                    <div class="l-feature-row">
+                    <div class="l-feature-phone">
+                        <img src="./images/screen1.png" id="screen-1" alt="スマートフォン">
+                        <img src="./images/screen2.png" id="screen-2" alt="スマートフォン">
+                        <img src="./images/screen3.png" id="screen-3" alt="スマートフォン">
+                        <img src="./images/screen4.png" id="screen-4" alt="スマートフォン">
+                    </div>
+                    <div class="l-feature-row l-feature-row-top" id="row-1">
                         <img class="l-feature-img" src="./images/hero-loop1.svg" alt="ミーティング">
-                        <div class="l-feature-item">
+                        <div class="l-feature-item" onclick="popupToggle()">
                             <div class="l-feature-item-ttle">
                                 ワンタップで、<br>
                                 ハンズフリーで。<br>
@@ -295,9 +333,9 @@
                         </div>
                     </div>
 
-                    <div class="l-feature-row l-feature-row-reverse">
+                    <div class="l-feature-row l-feature-row-reverse" id="row-2">
                         <img class="l-feature-img" src="./images/hero-loop2.svg" alt="ミーティング">
-                        <div class="l-feature-item">
+                        <div class="l-feature-item" onclick="popupToggle()">
                         <div class="l-feature-item-ttle">
                             あなたに最適サイズの<br>
                             会話方法をご用意。
@@ -319,9 +357,9 @@
                         </div>
                         </div>
                     </div>
-                    <div class="l-feature-row">
+                    <div class="l-feature-row" id="row-3">
                         <img class="l-feature-img" src="./images/hero-loop3.svg" alt="工事現場">
-                        <div class="l-feature-item">
+                        <div class="l-feature-item" onclick="popupToggle()">
                         <div class="l-feature-item-ttle">
                             作業中も
                             つながって安心・楽しい。
@@ -347,9 +385,9 @@
                         </div>
                         </div>
                     </div>
-                    <div class="l-feature-row l-feature-row-reverse">
+                    <div class="l-feature-row l-feature-row-reverse" id="row-4">
                         <img class="l-feature-img" src="./images/hero-loop4.svg" alt="マップ">
-                        <div class="l-feature-item">
+                        <div class="l-feature-item"  onclick="popupToggle()">
                         <div class="l-feature-item-ttle">
                             会話だって
                             データベースに。
@@ -382,7 +420,7 @@
                         <div class="l-function-item">
                             <img class="l-function-item-img" src="./images/function1.jpg" alt="iPhone">
                             <div class="l-function-item-inner">
-                                <div class="c-item-link">
+                                <div class="c-item-link"  onclick="popupToggle()">
                                     <p class="c-item-link-txt">ツール連携機能</p>
                                     <img class="c-btn-plus" src="./images/icon/plus (1).svg" alt="プラスボタン">
                                 </div>
@@ -394,7 +432,7 @@
                         <div class="l-function-item">
                             <img class="l-function-item-img" src="./images/function2.jpg" alt="iPhone">
                             <div class="l-function-item-inner">
-                                <div class="c-item-link">
+                                <div class="c-item-link" onclick="popupToggle()">
                                     <p class="c-item-link-txt">アナリティクス機能</p>
                                     <img class="c-btn-plus" src="./images/icon/plus (1).svg" alt="プラスボタン">
                                 </div>
@@ -406,7 +444,7 @@
                         <div class="l-function-item">
                             <img class="l-function-item-img" src="./images/function3.jpg" alt="iPhone">
                             <div class="l-function-item-inner">
-                                <div class="c-item-link">
+                                <div class="c-item-link" onclick="popupToggle()">
                                     <p class="c-item-link-txt">SoundSync Anywhere</p>
                                     <img class="c-btn-plus" src="./images/icon/plus (1).svg" alt="プラスボタン">
                                 </div>
@@ -460,7 +498,7 @@
                         <div class="l-hardware-product-txt">
                             月額¥1,500から。<br>または買い切り¥18,000から。
                         </div>
-                        <div class="c-more-link l-hardware-product-item-link">詳細を見る<img src="./images/icon/plus (1).svg" alt="プラス"></div>
+                        <div class="c-more-link l-hardware-product-item-link" onclick="popupToggle()">詳細を見る<img src="./images/icon/plus (1).svg" alt="プラス"></div>
                     </div>
                     <div class="l-hardware-product-item">
                         <img class="l-hardware-product-img" src="./images/product2.jpg" alt="イヤホン">
@@ -472,7 +510,7 @@
                             <li>NTT開発のPSZ技術</li>
                             <li>長時間装着でも快適</li>
                         </ul>
-                        <div class="c-more-link l-hardware-product-item-link">詳細を見る<img src="./images/icon/plus (1).svg" alt="プラス"></div>
+                        <div class="c-more-link l-hardware-product-item-link" onclick="popupToggle()">詳細を見る<img src="./images/icon/plus (1).svg" alt="プラス"></div>
                     </div>
                 </div>
                 <div class="c-notice-tax">※価格はすべて税抜です</div>
@@ -745,7 +783,7 @@
                     よくある質問
                 </div>
                 <div class="l-QnA-container">
-                    <div class="l-QnA-col">
+                    <div class="l-QnA-col" id="qna-1">
                         <div class="l-QnA-col-question">
                             <div class="l-QnA-col-QnA ">Q.</div>
                             <div class="l-QnA-col-question-txt">
@@ -760,7 +798,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="l-QnA-col">
+                    <div class="l-QnA-col" id="qna-2">
                         <div class="l-QnA-col-question">
                             <div class="l-QnA-col-QnA ">Q.</div>
                             <div class="l-QnA-col-question-txt">
@@ -774,7 +812,7 @@
                                 お手持ちのマイク付きの有線イヤフォン、AirPodsPro、アプリ単体でのご利用が可能です。ただし、一部機能が制限されるため、全機能をご利用いただくにはSoundSyncイヤフォンをご利用ください。                            </div>
                         </div>
                     </div>
-                    <div class="l-QnA-col">
+                    <div class="l-QnA-col" id="qna-3">
                         <div class="l-QnA-col-question">
                             <div class="l-QnA-col-QnA ">Q.</div>
                             <div class="l-QnA-col-question-txt">
@@ -1024,5 +1062,17 @@
                 </div>
             </div>
         </div>
+
+    <div class="l-popup" onclick="popupToggle()">
+        <div class="l-popup-body" onclick="event.stopPropagation()">
+            <div class="l-popup-close" onclick="popupToggle()">
+                <img src="./images/icon/x-circle.svg" alt="閉じる">
+            </div>
+            <div class="l-popup-title">
+                こんにちは！
+            </div>
+             <img src="./images/me.png" alt="me">
+        </div>
+    </div>
 </body>
 </html>
