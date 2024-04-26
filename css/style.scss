@@ -18,14 +18,12 @@ body {
     font-family: 'Barlow Condensed';
     color: var(--text);
 }
+ul {
+    padding-inline-start: unset;
+}
 li {
     list-style-type: none;
 }
-
-img {
-    max-width: 100vw;
-}
-
 
 
 .br-mobile {
@@ -53,8 +51,9 @@ a:active {
 
 // component
 .c-logo {
-    width: 9rem;
-    object-fit: contain;
+    img {
+        width: 21vw;
+    }
 }
 
 .c-simulation-btn {
@@ -77,6 +76,7 @@ a:active {
     position: fixed;
     bottom: 5rem;
     right: 3rem;
+    transition: 0.3s;
 
     img {
         object-fit: contain;
@@ -85,6 +85,11 @@ a:active {
     &-txt {
         color: var(--background-primary);
         margin: 0 10px;
+        font-weight: 700;
+    }
+    &:hover {
+        transition: 0.3s;
+        background-color: #636363;
     }
 }
 #c-simulation-btn {
@@ -103,6 +108,7 @@ a:active {
     &-txt {
         color: var(--background-primary);
         margin: 0 10px;
+        font-weight: 700;
     }
 }
 
@@ -129,9 +135,9 @@ a:active {
 .c-title {
     text-align: center;
     font-weight: 900;
-    font-size: 40px;
+    font-size: 4vw;
     span {
-        margin-bottom: 10px;
+        margin: 10px 0;
         display: block;
         font-size: 14px;
     }
@@ -179,6 +185,7 @@ a:active {
 
 .c-item {
     margin-right: 20px;
+    padding-bottom: 25px;
     &-wrap {
         margin-top: 20px;
         display: flex;
@@ -232,6 +239,7 @@ a:active {
 
 // header
 .l-header {
+    padding: 0 20px;
     width: 100vw;
     top: 0;
     position: fixed;
@@ -244,6 +252,9 @@ a:active {
     font-weight: 600;
     background-color: var(--background-primary);
     border-bottom: solid 1px #d2d1d2;
+    &-logo {
+        width: 16vw;
+    }
     &-nav {
         display: flex;
         &-item {
@@ -255,8 +266,7 @@ a:active {
                 display: none;
             }
             &-arrow {
-                object-fit: contain;
-                width: 1.5rem;
+                width: 1rem;
                 transition: all 0.3s;
                 &:hover {
                     fill: var(--accent);
@@ -305,6 +315,9 @@ a:active {
     }
     &-hamburger {
         display: none;
+        img {
+            margin-right: 20px;
+        }
         @media (max-width: 768px) and (orientation: portrait) { 
             display: block;
             margin-right: 20px;
@@ -389,16 +402,16 @@ a:active {
         @media (max-width: 768px) and (orientation: portrait) { 
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             padding: 0 20px;
             height: 100%;
         }
     }
     &-copy {
+        z-index: 100;
         position: absolute;
-        top: 5rem;
-        left: 7rem;
+        top: 12%;
+        left: 7%;
         display: flex;
         flex-direction: column;
         @media (max-width: 768px) and (orientation: portrait) { 
@@ -411,7 +424,7 @@ a:active {
     &-lead {
         color: var(--background-primary);
         font-weight: 900;
-        font-size: 40px;
+        font-size: 4vw;
         span {
             font-size: 50px;
         }
@@ -419,15 +432,16 @@ a:active {
     &-phone {
         z-index: 10;
         object-fit: contain;
-        height: 60%;
+        width: 37%;
         position: absolute;
-        top: 7rem;
-        right: 3rem;
+        top: 8vh;
+        right: 1%;
         @media (max-width: 768px) and (orientation: portrait) { 
             position: relative;
-            margin: auto;
+            margin: 4rem 0;
             top: unset;
             bottom: 1rem;
+            width: 100%;
         }
     }
     &-loop {
@@ -514,6 +528,7 @@ a:active {
     &-txt {
         margin-top: 20px;
         text-align: center;
+        line-height: 2;
     }
     img {
         width: 200px;
@@ -715,13 +730,13 @@ a:active {
 }
 // feature
 .l-feature {
-    padding: 0 8rem;
+    padding: 0 5rem;
     @media (max-width: 768px) and (orientation: portrait) { 
         padding: 0
     }
     &-title {
+        font-size: 4vw;
         font-weight: 600;
-        font-size: 40px;
         text-align: center;
         margin-bottom: 5rem;
         span {
@@ -781,17 +796,18 @@ a:active {
            padding-top: 2rem;
         }
 
-        &-ttle {
+        &-title {
             font-weight: 700;
-            font-size: 42px;
+            font-size: 3vw;
             margin-bottom: 20px;
             color: var(--text-secondary);
         }
         &-link {
-            font-weight: 700;
-            font-size: 42px;
-            line-height: 1.5;
             margin-bottom: 20px;
+            display: flex;
+            font-weight: 700;
+            font-size: 3vw;;
+            line-height: 1.5;
             color: var(--background-primary);
             cursor: pointer;
         }
@@ -800,13 +816,13 @@ a:active {
             line-height: 1.5;
             img {
                 margin: auto ;
-                height: 42px;
+                width: 5vw;
             }
         }
         &-txt {
             font-weight: 300;
             margin: 3rem 0 0;
-            font-size: 1.6rem;
+            font-size: 2vw;;
             line-height: 1.8;
         }
         &-point {
@@ -817,7 +833,7 @@ a:active {
             span {
                 display: block;
                 color: var(--background-secondary);
-                font-size: 18px;
+                font-size: 14px;
                 font-weight: 300;
 
             }
@@ -892,7 +908,7 @@ a:active {
 
 // function
 .l-function {
-    padding: 0 8rem;
+    padding: 0 5rem;
     @media (max-width: 768px) and (orientation: portrait) { 
         padding: 0
     }
@@ -901,13 +917,14 @@ a:active {
     }
     &-item {
         display: flex;
+        justify-content: center;
         margin-top: 60px;
         @media (max-width: 768px) and (orientation: portrait) { 
             flex-direction: column;
             align-items: center;
         }
         &-inner {
-            margin: auto 0;
+            width: 80vw;
         }
         &-img {
             margin-right: 46px;
@@ -919,6 +936,9 @@ a:active {
                 width: 100%;
                 margin-right: 0;
             }
+        }
+        &-txt {
+            line-height: 2;
         }
     }
     &-bottom {
@@ -955,7 +975,7 @@ a:active {
 
 // hardware
 .l-hardware {
-    padding: 12rem 15.6rem;
+    padding: 12rem 5rem;
     @media (max-width: 768px) and (orientation: portrait) { 
         padding: 3rem
     }
@@ -1009,6 +1029,7 @@ a:active {
         &-point {
             padding: 0;
             li {
+                line-height: 2;
                 list-style: none;
                 &::before {
                     content: "";
@@ -1024,7 +1045,8 @@ a:active {
         }
         &-txt {
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
+            line-height: 2;
         }
     }
     &-alert {
@@ -1214,6 +1236,7 @@ a:active {
         &-top {
             padding: 35px 0;
             align-items: center;
+            justify-content: center;
             display: flex;
             border-bottom: solid 0.5px #dfdfdf;
         }
@@ -1222,19 +1245,25 @@ a:active {
             font-size: 28px;
         }
         &-img {
-            margin: 0 40px 0 20px;
+            margin-right: 40px;
             object-fit: contain;
             height: 84px;
             max-width: 89px;
         }
         &-price {
             padding: 35px 0;
-            font-size: 30px;
             font-weight: 700;
+            font-size: 30px;
+            h1 {
+                margin: 0;
+                letter-spacing: 2px;
+                font-size: 30px;
+            }
             &-2 {
                 margin-right: 20px;
             }
             span {
+                margin: 0 auto;
                 font-size: 14px;
                 padding: 0 7px;
                 display: block;
@@ -1271,7 +1300,7 @@ a:active {
         font-size: 14px;
     }
     &-link {
-        margin: 36px 0;
+        margin: 40px 0;
         display: flex;
         justify-content: center;
     }
@@ -1284,7 +1313,7 @@ a:active {
         padding: 3rem
     }
     &-link {
-        margin-top: 10px;
+        margin-top: 36px;
         display: flex;
         justify-content: end;
     }
@@ -1412,8 +1441,13 @@ a:active {
     background-color: var(--border);
     font-size: 14px;
     font-weight: 100;
+    z-index: 9999999999;
+    position: relative;
     &-logo {
         margin-left: 7rem;
+        img {
+            width: 40vw;
+        }
     }
     &-menu {
         padding: 2rem 7rem;
@@ -1438,6 +1472,7 @@ a:active {
             &-item {
                 font-weight: 400;
                 font-size: 14px;
+                line-height: 2;
                 a {
                     color: var(--text-secondary);
                 }
@@ -1459,6 +1494,9 @@ a:active {
         font-weight: 400;
         &-wrap {
             display: flex;
+        }
+        &-item {
+            margin-right: 25px;
         }
     }
 }
