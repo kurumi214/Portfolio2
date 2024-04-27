@@ -36,7 +36,7 @@ li {
 .l-main-wrap {
     padding: 12rem 0;
     @media (max-width: 768px) and (orientation: portrait) { 
-        padding: 3rem
+        padding: 1rem
     }
     background-color: var(--background-dark);
     color: var(--background-primary);
@@ -55,7 +55,9 @@ a:active {
         width: 21vw;
     }
 }
-
+.c-simulation-btn-wrap {
+    width: 100%;
+}
 .c-simulation-btn {
     &-std {
         position: relative;
@@ -72,7 +74,7 @@ a:active {
     position: fixed;
     box-shadow: 1rem 1rem 3rem rgba(19,22,22,.4);
     border-radius: 100vh;
-    padding: 15px 25px;
+    padding: 19px 34px;
     position: fixed;
     bottom: 5rem;
     right: 3rem;
@@ -80,16 +82,27 @@ a:active {
 
     img {
         object-fit: contain;
-        width: 1.5rem;
+        width: 1rem;
     }
     &-txt {
         color: var(--background-primary);
         margin: 0 10px;
         font-weight: 700;
+        font-size: 1.5vw;
+        @media (max-width: 768px) and (orientation: portrait) { 
+            font-size: 3vw;
+        }
     }
     &:hover {
         transition: 0.3s;
         background-color: #636363;
+    }
+
+    @media (max-width: 768px) and (orientation: portrait) { 
+        display: flex;
+        justify-content: center;
+        left: 3rem;
+        width: unset;
     }
 }
 #c-simulation-btn {
@@ -100,15 +113,24 @@ a:active {
     background-color: var(--background-dark);
     box-shadow: 1rem 1rem 3rem rgba(19,22,22,.4);
     border-radius: 100vh;
-    padding: 15px 25px;
+    padding: 19px 34px;
     img {
         object-fit: contain;
-        width: 1.5rem;
+        width: 1rem;
     }
     &-txt {
         color: var(--background-primary);
         margin: 0 10px;
         font-weight: 700;
+        font-size: 1.5vw;
+        @media (max-width: 768px) and (orientation: portrait) { 
+            font-size: 3vw;
+        }
+    }
+    @media (max-width: 768px) and (orientation: portrait) { 
+        display: flex;
+        justify-content: center;
+        width: unset;
     }
 }
 
@@ -135,11 +157,14 @@ a:active {
 .c-title {
     text-align: center;
     font-weight: 900;
-    font-size: 4vw;
+    font-size: 2.5rem;
     span {
         margin: 10px 0;
         display: block;
-        font-size: 14px;
+        font-size: 2.8vw;
+    }
+    @media (max-width: 768px) and (orientation: portrait) { 
+        font-size: 1.6rem;
     }
 }
 .c-item-link {
@@ -180,6 +205,7 @@ a:active {
     margin-inline: auto;
     @media (max-width: 768px) and (orientation: portrait) { 
         width: 100%;
+        margin-top: 0;
     }
 }
 
@@ -187,7 +213,7 @@ a:active {
     margin-right: 20px;
     padding-bottom: 25px;
     &-wrap {
-        margin-top: 20px;
+        margin-top: 46px;
         display: flex;
         overflow-x: scroll;
     }
@@ -247,7 +273,7 @@ a:active {
     display: flex;
     align-items:center;
     justify-content: space-between;
-    height: 4.5rem;
+    height: 3.5rem;
     font-size: 12px;
     font-weight: 600;
     background-color: var(--background-primary);
@@ -344,13 +370,13 @@ a:active {
     z-index: 9999;
 
     overflow: scroll;
-     &-item {
+    &-item {
         color: var(--text);
         font-size: 1rem;
         font-weight: 600;
         display: flex;
         align-items: center;
-        height: 4.5rem;
+        height: 3.5rem;
         margin-inline: 2rem;
         border-top: solid 1px #d2d1d2;
         transition: all 0.3s;
@@ -518,7 +544,7 @@ a:active {
     height: 669px;
     margin-bottom: 2em;
     @media (max-width: 768px) and (orientation: portrait) { 
-        height: calc(669px + 35rem)
+        height: calc(526px + 35rem)
     }
     &-title {
         @media (max-width: 768px) and (orientation: portrait) { 
@@ -645,10 +671,10 @@ a:active {
             }
         }
     }
-    &-ttl {
+    &-title {
         color: var(--background-primary);
         font-weight: 700;
-        font-size: 40px;
+        font-size: 2.5rem;
         margin-bottom: 40px;
         span {
             display: block;
@@ -685,11 +711,14 @@ a:active {
     &-card {
         background-color: var(--background-primary);
         border-radius: 15px;
-        padding: 20px;
-        width: 22.5rem;
+        padding: 30px 20px;
+        width: 30vw;
+        @media (max-width: 768px) and (orientation: portrait) { 
+            width: 82vw;
+        }
         &-icon {
             img {
-                width: 50px;
+                width: 8vw;
                 object-fit: contain;
             }
         }
@@ -741,7 +770,7 @@ a:active {
         margin-bottom: 5rem;
         span {
             display: block;
-            font-size: 18px;
+            font-size: 3vw;
             font-weight: 300;
         }
     }
@@ -821,14 +850,14 @@ a:active {
         }
         &-txt {
             font-weight: 300;
-            margin: 3rem 0 0;
+            margin: 3vh 0 0;
             font-size: 2vw;;
             line-height: 1.8;
         }
         &-point {
             color: var(--accent);
             font-weight: 700;
-            font-size: 48px;
+            font-size: 7vw;
             margin-top: 20px;
             span {
                 display: block;
@@ -921,7 +950,6 @@ a:active {
         margin-top: 60px;
         @media (max-width: 768px) and (orientation: portrait) { 
             flex-direction: column;
-            align-items: center;
         }
         &-inner {
             width: 80vw;
@@ -934,6 +962,7 @@ a:active {
             border-radius: 15px;
             @media (max-width: 768px) and (orientation: portrait) { 
                 width: 100%;
+                height: 20rem;
                 margin-right: 0;
             }
         }
@@ -1003,6 +1032,7 @@ a:active {
                 margin-bottom: 20px;
                 width: 60%;
             }
+
             &-link {
                 position: absolute;
                 bottom: 2.5rem;
@@ -1060,15 +1090,23 @@ a:active {
         border-radius: 11px;
         position: relative;
         max-width: 801px;
+        @media (max-width: 768px) and (orientation: portrait) {
+            padding: 1.3rem;
+        }
+
         &-txt {
             font-weight: 600;
             font-size: 18px;
+            @media (max-width: 768px) and (orientation: portrait) {
+                font-size: 3vw;
+            }
             span {
                 font-weight: 100;
                 font-size: 15px;
                 display: inline-block;
                 @media (max-width: 768px) and (orientation: portrait) { 
-                    padding-right: 150px;
+                    padding-right: 81px;
+                    font-size: 3vw;
                 }
             }
         }
@@ -1078,10 +1116,10 @@ a:active {
             width: 150px;
             height: 150px;
             @media (max-width: 768px) and (orientation: portrait) { 
-                width: 150px;
-                padding-top: 3lh;
+                width: 91px;
                 right: 0;
                 position: absolute;
+                padding: 43px 7px 0 0;
             }
         }
     }
@@ -1089,7 +1127,7 @@ a:active {
 
 // client
 .l-client-main {
-    padding: 7rem 5rem;
+    padding: 7vh 5vw;
     background-color: #f2f2f2;
     &-logo {
         &-wrap {
@@ -1100,11 +1138,15 @@ a:active {
             border-radius: 11px;
             img {
                 margin: 0 29px 29px 0;
-                @media (max-width: 768px) and (orientation: portrait) { 
-                    margin: 0 0 29px 0;
-                }
                 object-fit: contain;
                 width: 111px;
+                @media (max-width: 768px) and (orientation: portrait) { 
+                    margin: 0 0 29px 0;
+                    width: 25vw;
+                    &:nth-last-child(-n+2) {
+                        margin: 0;
+                    }
+                }
             }
         }
     }
@@ -1115,16 +1157,19 @@ a:active {
     padding: 7rem 5rem;
     background-color: var(--background-dark);
     @media (max-width: 768px) and (orientation: portrait) { 
-        padding: 3rem
+        padding: 3rem 1rem
     }
     &-title {
         color: var(--background-primary);
         font-weight: 900;
-        font-size: 40px;
+        font-size: 2.5rem;
         span {
             margin-bottom: 10px;
             display: block;
             font-size: 14px;
+        }
+        @media (max-width: 768px) and (orientation: portrait) { 
+            font-size: 1.6rem;
         }
     }
     &-wrap {
@@ -1162,6 +1207,7 @@ a:active {
         overflow: hidden;
         @media (max-width: 768px) and (orientation: portrait) { 
             width: calc(50% - 10px);
+            height: 25vh;
         }
         z-index: 10;
     }
@@ -1234,7 +1280,7 @@ a:active {
             }
         }
         &-top {
-            padding: 35px 0;
+            padding: 35px 10px;
             align-items: center;
             justify-content: center;
             display: flex;
@@ -1242,7 +1288,10 @@ a:active {
         }
         &-title {
             font-weight: 700;
-            font-size: 28px;
+            font-size: 2rem;
+            @media (max-width: 768px) and (orientation: portrait) { 
+                font-size: 1.3rem;
+            }
         }
         &-img {
             margin-right: 40px;
@@ -1257,7 +1306,7 @@ a:active {
             h1 {
                 margin: 0;
                 letter-spacing: 2px;
-                font-size: 30px;
+                font-size: 5vw;
             }
             &-2 {
                 margin-right: 20px;
@@ -1309,7 +1358,7 @@ a:active {
 .l-example {
     padding: 7rem 6rem;
     @media (max-width: 768px) and (orientation: portrait) { 
-        padding: 3rem
+        padding: 2rem
     }
     &-link {
         margin-top: 36px;
@@ -1447,14 +1496,21 @@ a:active {
         img {
             width: 40vw;
         }
+        @media (max-width: 768px) and (orientation: portrait) { 
+            margin-left: 4rem;
+        }
     }
     &-menu {
         padding: 2rem 7rem;
         gap: 10rem;
         display: flex;
-        @media (max-width: 768px) and (orientation: portrait) { 
+        @media (max-width: 768px) and (orientation: portrait) {
+            padding: 2rem 4rem 6rem 2rem;
             flex-direction: column;
             gap: 0;
+        }
+        &-wrap {
+            margin-bottom: 30px;
         }
         &-col {
             &-title {
@@ -1501,11 +1557,23 @@ a:active {
         color: var(--text-secondary);
         font-size: 16px;
         font-weight: 400;
+        @media (max-width: 768px) and (orientation: portrait) {
+            display: block;
+            padding: 2rem 4rem;
+            margin: 0;
+        }
+
         &-wrap {
             display: flex;
+            @media (max-width: 768px) and (orientation: portrait) { 
+                display: unset;
+            }
         }
         &-item {
             margin-right: 25px;
+            @media (max-width: 768px) and (orientation: portrait) { 
+                margin: 0 0 15px 0;
+            }
         }
     }
 }
