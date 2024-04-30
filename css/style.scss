@@ -52,7 +52,7 @@ a:active {
 // component
 .c-logo {
     img {
-        width: 21vw;
+        width: 38vw;
     }
 }
 .c-simulation-btn-wrap {
@@ -279,7 +279,7 @@ a:active {
     background-color: var(--background-primary);
     border-bottom: solid 1px #d2d1d2;
     &-logo {
-        width: 16vw;
+        width: 19vw;
     }
     &-nav {
         display: flex;
@@ -364,7 +364,7 @@ a:active {
     position: fixed;
     left: 0;
     right: 0;
-    top: calc(4.5rem + 1px);
+    top: calc(3.5rem + 1px);
     bottom: 0;
     background-color: var(--background-primary);
     z-index: 9999;
@@ -516,12 +516,17 @@ a:active {
 
 // client
 .l-client{
-    padding: 20px 60px;
+    padding: 7vh 5vw;
     &-list {
         margin: 1.5rem auto;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        @media (max-width: 768px) and (orientation: portrait) {
+            &:nth-child(even) {
+                margin-left: 20px;
+            }
+        }
         img {
             @media (max-width: 768px) and (orientation: portrait) { 
                 width: 40%
@@ -851,7 +856,7 @@ a:active {
         &-txt {
             font-weight: 300;
             margin: 3vh 0 0;
-            font-size: 2vw;;
+            font-size: 1.6vw;;
             line-height: 1.8;
         }
         &-point {
@@ -1145,6 +1150,9 @@ a:active {
                     width: 25vw;
                     &:nth-last-child(-n+2) {
                         margin: 0;
+                    }
+                    &:nth-child(even) {
+                        margin-left: 20px;
                     }
                 }
             }
