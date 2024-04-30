@@ -522,12 +522,14 @@ a:active {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        @media (max-width: 768px) and (orientation: portrait) {
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
         img {
             @media (max-width: 768px) and (orientation: portrait) { 
                 width: 40%;
-                &:nth-child(even) {
-                    margin-right: 0;
-                }
             }
             &:last-child {
                 margin-right: 0;
