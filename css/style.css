@@ -555,13 +555,11 @@ a:active {
   flex-wrap: wrap;
 }
 @media (max-width: 768px) and (orientation: portrait) {
-  .l-client-list:nth-child(even) {
-    margin-left: 20px;
-  }
-}
-@media (max-width: 768px) and (orientation: portrait) {
   .l-client-list img {
     width: 40%;
+  }
+  .l-client-list img:nth-child(even) {
+    margin-left: 20px;
   }
 }
 .l-client-list img:last-child {
