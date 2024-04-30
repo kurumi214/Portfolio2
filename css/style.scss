@@ -526,7 +526,7 @@ a:active {
             @media (max-width: 768px) and (orientation: portrait) { 
                 width: 40%;
                 &:nth-child(even) {
-                    margin-left: 20px;
+                    margin-right: 0;
                 }
             }
             &:last-child {

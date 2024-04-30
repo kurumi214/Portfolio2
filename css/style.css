@@ -559,7 +559,7 @@ a:active {
     width: 40%;
   }
   .l-client-list img:nth-child(even) {
-    margin-left: 20px;
+    margin-right: 0;
   }
 }
 .l-client-list img:last-child {
