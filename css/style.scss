@@ -526,20 +526,22 @@ a:active {
         justify-content: center;
         flex-wrap: wrap;
         img {
-            @media (max-width: 768px) and (orientation: portrait) { 
-                width: 40%;
-                &:nth-child(even) {
-                    margin-right: 0;
-                }
-            }
             &:last-child {
                 margin-right: 0;
+            }
+            @media (max-width: 768px) and (orientation: portrait) { 
+                width: 40%;
             }
         }
         &-logo {
             object-fit: contain;
             width: 110px;
             margin-right: 20px;
+            @media (max-width: 768px) and (orientation: portrait) {
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+            }
         }
     }
 }

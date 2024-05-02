@@ -559,22 +559,24 @@ a:active {
   justify-content: center;
   flex-wrap: wrap;
 }
+.l-client-list img:last-child {
+  margin-right: 0;
+}
 @media (max-width: 768px) and (orientation: portrait) {
   .l-client-list img {
     width: 40%;
   }
-  .l-client-list img:nth-child(even) {
-    margin-right: 0;
-  }
-}
-.l-client-list img:last-child {
-  margin-right: 0;
 }
 .l-client-list-logo {
   -o-object-fit: contain;
      object-fit: contain;
   width: 110px;
   margin-right: 20px;
+}
+@media (max-width: 768px) and (orientation: portrait) {
+  .l-client-list-logo:nth-child(even) {
+    margin-right: 0;
+  }
 }
 
 .l-about {
