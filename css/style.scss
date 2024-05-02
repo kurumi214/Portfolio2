@@ -537,6 +537,9 @@ a:active {
             &:last-child {
                 margin-right: 0;
             }
+            &:nth-last-child(-n+2) {
+                margin: 0;
+            }
         }
         &-logo {
             object-fit: contain;
