@@ -560,20 +560,15 @@ a:active {
   flex-wrap: wrap;
 }
 @media (max-width: 768px) and (orientation: portrait) {
-  .l-client-list:nth-last-child(-n+2) {
-    margin: 0;
-  }
-}
-@media (max-width: 768px) and (orientation: portrait) {
   .l-client-list img {
     width: 40%;
+  }
+  .l-client-list img:nth-child(even) {
+    margin-right: 0;
   }
 }
 .l-client-list img:last-child {
   margin-right: 0;
-}
-.l-client-list img:nth-last-child(-n+2) {
-  margin: 0;
 }
 .l-client-list-logo {
   -o-object-fit: contain;
