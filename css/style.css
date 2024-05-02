@@ -306,6 +306,11 @@ a:active {
 .l-header-logo {
   width: 19vw;
 }
+@media (max-width: 768px) and (orientation: portrait) {
+  .l-header-logo {
+    width: 38vw;
+  }
+}
 .l-header-nav {
   display: flex;
 }
@@ -555,8 +560,8 @@ a:active {
   flex-wrap: wrap;
 }
 @media (max-width: 768px) and (orientation: portrait) {
-  .l-client-list:nth-child(even) {
-    margin-right: 0;
+  .l-client-list:nth-last-child(-n+2) {
+    margin: 0;
   }
 }
 @media (max-width: 768px) and (orientation: portrait) {
@@ -685,7 +690,7 @@ a:active {
 .l-benefit {
   overflow-x: hidden;
   position: relative;
-  padding: 100vh 15.6rem 250vh;
+  padding: 50vh 15.6rem 250vh;
   background-color: var(--accent);
   z-index: 1;
 }
@@ -1595,7 +1600,7 @@ a:active {
   background-color: var(--border);
   font-size: 14px;
   font-weight: 100;
-  z-index: 9999999999;
+  z-index: 1000;
   position: relative;
 }
 .l-footer-logo {

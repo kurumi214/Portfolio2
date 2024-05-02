@@ -280,6 +280,9 @@ a:active {
     border-bottom: solid 1px #d2d1d2;
     &-logo {
         width: 19vw;
+        @media (max-width: 768px) and (orientation: portrait) { 
+            width: 38vw;
+        }
     }
     &-nav {
         display: flex;
@@ -523,8 +526,8 @@ a:active {
         justify-content: center;
         flex-wrap: wrap;
         @media (max-width: 768px) and (orientation: portrait) {
-            &:nth-child(even) {
-                margin-right: 0;
+            &:nth-last-child(-n+2) {
+                margin: 0;
             }
         }
         img {
@@ -642,7 +645,7 @@ a:active {
 .l-benefit {
     overflow-x: hidden;
     position: relative;
-    padding: 100vh 15.6rem 250vh;
+    padding: 50vh 15.6rem 250vh;
     @media (max-width: 768px) and (orientation: portrait) { 
         padding: 100vh 1rem 25vh;
     }
@@ -1497,7 +1500,7 @@ a:active {
     background-color: var(--border);
     font-size: 14px;
     font-weight: 100;
-    z-index: 9999999999;
+    z-index: 1000;
     position: relative;
     &-logo {
         margin-left: 7rem;
