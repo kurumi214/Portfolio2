@@ -690,7 +690,7 @@ a:active {
 .l-benefit {
   overflow-x: hidden;
   position: relative;
-  padding: 50vh 15.6rem 250vh;
+  padding: 21vh 15.6rem 250vh;
   background-color: var(--accent);
   z-index: 1;
 }
