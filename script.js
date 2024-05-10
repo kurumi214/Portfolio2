@@ -12,12 +12,15 @@ window.onscroll = function () {
         let benefitContainer = document.querySelector('.l-benefit-container');
         let benefitInnerPosition = getPosition(benefitInner);
 
+        let benefitTitle = document.querySelector(".l-benefit-title")
+        let benefitList = document.querySelector(".l-benefit-list")
+        let startingPoint = (window.innerHeight  - (benefitTitle.clientHeight + benefitList.clientHeight)) / 2
+
         if (benefitInnerPosition < window.scrollY + window.innerHeight) {
             let offset = window.scrollY - benefitInnerPosition;
-            // [-300, ...]
-            if (offset > -300) {
-                benefitSlider.style.transform = `translateY(${offset + 300}px)`;
-                benefitContainer.style.transform = `translateX(${-offset - 300}px)`;
+            if (offset > -startingPoint) {
+                benefitSlider.style.transform = `translateY(${offset + startingPoint}px)`;
+                benefitContainer.style.transform = `translateX(${-offset - startingPoint}px)`;
             }
         }
     }
